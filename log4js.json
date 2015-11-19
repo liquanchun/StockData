@@ -1,0 +1,18 @@
+{
+    "customBaseDir" :"E:/WebstormProjects/untitled/logs/",
+    "customDefaultAtt" :{
+        "type": "dateFile",
+        "absolute": true,
+        "alwaysIncludePattern": true
+    },
+    "appenders": [
+            {"type": "console", "category": "console"},
+            {"pattern": "debug/yyyyMMddhh.log", "category": "logDebug"},
+            {"pattern": "info/yyyyMMddhh.log", "category": "logInfo"},
+            {"pattern": "warn/yyyyMMddhh.log", "category": "logWarn"},
+            {"pattern": "err/yyyyMMddhh.log", "category": "logErr"},
+            {"pattern": "sql/yyyyMMddhh.txt", "category": "logSql"}
+        ],
+        "replaceConsole": true,
+        "levels":{ "logDebug": "DEBUG", "logInfo": "DEBUG", "logWarn": "DEBUG", "logErr": "DEBUG", "logSql": "DEBUG"}
+}

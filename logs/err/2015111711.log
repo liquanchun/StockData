@@ -1,0 +1,408 @@
+[2015-11-17 11:36:13.057] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.112] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.112] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.113] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.113] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.114] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.114] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.114] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.115] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.115] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.115] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.121] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.121] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.194] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.194] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.196] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.197] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.198] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.199] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.202] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.203] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.203] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.204] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.208] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.214] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.216] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.217] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.234] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.235] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.245] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.246] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.255] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.256] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.256] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.257] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.265] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.266] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.271] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.273] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.285] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.286] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.286] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.306] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.315] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.316] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.317] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.325] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.346] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.347] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.356] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 11:36:13.356] [ERROR] logErr - TypeError: Cannot read property 'length' of undefined
+    at e:\WebstormProjects\untitled\投资日历.js:23:42
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)

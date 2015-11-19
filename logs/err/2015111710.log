@@ -1,0 +1,16 @@
+[2015-11-17 10:25:55.399] [ERROR] logErr - TypeError: dj.data[0].stocks.length is not a function
+    at e:\WebstormProjects\untitled\投资日历.js:27:57
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
+[2015-11-17 10:26:00.264] [ERROR] logErr - TypeError: dj.data[0].stocks.length is not a function
+    at e:\WebstormProjects\untitled\投资日历.js:27:57
+    at IncomingMessage.<anonymous> (e:\WebstormProjects\untitled\curl.js:18:13)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:903:12)
+    at doNTCallback2 (node.js:439:9)
+    at process._tickCallback (node.js:353:17)
