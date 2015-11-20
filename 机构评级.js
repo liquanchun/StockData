@@ -44,7 +44,7 @@ function start(url,mode) {
 }
 function newnotice() {
 
-    new cronJob('0 */1 16 * * MON-FRI', function(){
+    new cronJob('0 10 16 * * MON-FRI', function(){
             console.log('机构评级',moment().format("YYYY-MM-DD HH:mm:ss"));
             var url1 = "http://vip.stock.finance.sina.com.cn/q/go.php/vIR_RatingUp/index.phtml?p=";
             var url2 = "http://vip.stock.finance.sina.com.cn/q/go.php/vIR_RatingDown/index.phtml?p=";
