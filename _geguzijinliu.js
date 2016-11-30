@@ -61,4 +61,4 @@ function start(){
         downdata(url + i + urlend);
     }
 }
-exports.start = start;
+start();

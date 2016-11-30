@@ -50,6 +50,6 @@ function start(){
     }
     //downdata(url1);
 }
-exports.start = start;
+start();
 
 

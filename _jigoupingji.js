@@ -55,4 +55,4 @@ function newnotice() {
         }
         , null, true, 'Asia/Chongqing');
 }
-exports.start = newnotice;
+start();

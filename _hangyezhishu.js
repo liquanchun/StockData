@@ -48,7 +48,7 @@ function dowdata(url,lx) {
 }
 var cronJob = require("cron").CronJob;
 function start() {
-    new cronJob('0 */8 9-16 * * MON-FRI', function () {
+    new cronJob('0 8 16 * * MON-FRI', function () {
         console.log('行业板块实时指数',moment().format("YYYY-MM-DD HH:mm:ss"));
         dowdata(hangye1, '行业资金');
         dowdata(hangye2, '行业资金');
@@ -58,4 +58,4 @@ function start() {
     }, null, true, 'Asia/Chongqing');
 }
 
-exports.start = start;
+start();

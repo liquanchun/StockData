@@ -78,4 +78,4 @@ function start() {
         zhishu();
     }, null, true, 'Asia/Chongqing');
 }
-exports.start = start;
+start();
