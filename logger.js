@@ -1,29 +1,31 @@
 /**
- * Created by Administrator on 2015-11-09.
+ * Created by liqc on 2016-12-01.
  */
 var log4js = require('log4js');
-
 log4js.configure({
     appenders: [
         { type: 'console' },
-        {
-            type: 'dateFile',
-            filename: 'logs/log',
-            //filename: "blah.log",
-            pattern: "-yyyy-MM-dd.log",
-
-            maxLogSize: 1024,
-            // "pattern": "-yyyy-MM-dd",
-            alwaysIncludePattern: true,
-
-            backups: 4,
-            category: 'dateFileLog'
-        },
-    ],
-    replaceConsole: true
+        { type: 'file', filename: 'logs/error.log', "maxLogSize": 20480,category: 'error', },
+        { type: 'file', filename: 'logs/info.log',"maxLogSize": 20480, category: 'info' },
+        { type: 'file', filename: 'logs/sql.log', "maxLogSize": 20480,category: 'sql' }
+    ]
 });
 
-var logger = log4js.getLogger();
+var writeErr = function(msg) {
+    var loggererror = log4js.getLogger('error');
+    loggererror.error(msg);
+}
 
-logger.info("≤‚ ‘»’∆⁄");
+var writeSql = function(msg) {
+    var loggersql = log4js.getLogger('sql');
+    loggersql.debug(msg);
+}
 
+var writeInfo = function(msg) {
+    var loggerinfo = log4js.getLogger('info');
+    loggerinfo.info(msg);
+}
+
+exports.writeErr = writeErr;
+exports.writeSql = writeSql;
+exports.writeInfo = writeInfo;

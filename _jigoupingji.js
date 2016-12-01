@@ -3,7 +3,7 @@ var server = require("./curl");
 var query=require("./mysql.js");
 var moment = require("moment");
 var cronJob = require("cron").CronJob;
-var logger = require("./logHelper").helper;
+var logger = require('./logger');
 
 function start(url,mode) {
     server.download(url, function (data) {

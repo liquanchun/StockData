@@ -8,7 +8,7 @@ var query=require("./mysql.js");
 var moment = require("moment");
 var cronJob = require("cron").CronJob;
 var flow = require('nimble');
-var logger = require("./logHelper").helper;
+var logger = require('./logger');
 
 function start() {
     new cronJob('0 5 15 * * MON-FRI', function () {

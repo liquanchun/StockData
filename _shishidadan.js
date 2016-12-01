@@ -4,7 +4,7 @@ var query=require("./mysql.js");
 var moment = require("moment");
 var url = "http://data.10jqka.com.cn/funds/ddzz/order/asc/page/1/ajax/1/";
 var cronJob = require("cron").CronJob;
-var logger = require("./logHelper").helper;
+var logger = require('./logger');
 
 function start() {
     new cronJob('*/3 * 9-14 * * MON-FRI', function () {

@@ -5,7 +5,7 @@ var mathext = require('./mathext');
 var moment = require("moment");
 var url = "http://money.finance.sina.com.cn/quotes_service/api/json_v2.php/MoneyFlow.ssi_get_extend?id=3";
 var cronJob = require("cron").CronJob;
-var logger = require("./logHelper").helper;
+var logger = require('./logger');
 
 function start() {
     new cronJob('0 */15 9-16 * * MON-FRI', function () {

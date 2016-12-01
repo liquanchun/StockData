@@ -2,7 +2,7 @@ var cheerio = require("cheerio");
 var server = require("./curl");
 var query=require("./mysql.js");
 var moment = require("moment");
-var logger = require("./logHelper").helper;
+var logger = require('./logger');
 
 var hangye1 = "http://data.10jqka.com.cn/funds/hyzjl/field/tradezdf/order/desc/page/1/ajax/1/";
 var hangye2 = "http://data.10jqka.com.cn/funds/hyzjl/field/tradezdf/order/desc/page/2/ajax/1/";

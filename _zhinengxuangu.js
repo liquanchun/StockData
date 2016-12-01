@@ -4,7 +4,7 @@ var query=require("./mysql.js");
 var moment = require("moment");
 var url = "http://comment.10jqka.com.cn/znxg/formula_stocks_pc.json?_=1446796970888";
 var cronJob = require("cron").CronJob;
-var logger = require("./logHelper").helper;
+var logger = require('./logger');
 
 function start() {
     new cronJob('0 5 9,15 * * MON-FRI', function () {

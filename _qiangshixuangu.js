@@ -2,7 +2,7 @@ var cheerio = require("cheerio");
 var server = require("./curl");
 var query=require("./mysql.js");
 var moment = require("moment");
-var logger = require("./logHelper").helper;
+var logger = require('./logger');
 
 function dowdatalxsz(url,lx) {
     server.download(url, function (data) {

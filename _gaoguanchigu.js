@@ -2,7 +2,7 @@ var cheerio = require("cheerio");
 var server = require("./curl");
 var query=require("./mysql.js");
 var moment = require("moment");
-var logger = require("./logHelper").helper;
+var logger = require('./logger');
 
 var url = "http://data.10jqka.com.cn/financial/ggjy/field/enddate/order/desc/page/1/ajax/1/";
 var cronJob = require("cron").CronJob;

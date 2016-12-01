@@ -8,7 +8,7 @@ var server = require("./curl");
 var query=require("./mysql.js");
 var mathext = require('./mathext');
 var moment = require("moment");
-var logger = require("./logHelper").helper;
+var logger = require('./logger');
 
 function downdata(url) {
     server.download2(url, function (data) {
@@ -43,7 +43,6 @@ function downdata(url) {
 }
 
 var url1 = "http://quotes.money.163.com/hs/marketdata/service/jjcgph.php?host=/hs/marketdata/service/jjcgph.php&query=start:2015-06-30;end:2015-09-30&fields=RN,SYMBOL,SNAME,REPORTDATE,SHULIANG,SHULIANGBIJIAO,GUSHU,GUSHUBIJIAO,SHIZHI,SCSTC27&sort=SHULIANG&order=desc&count=25&type=query&callback=callback_180491765&req=31529&page=";
-
 function start(){
     for(var i = 0;i<70;i++){
         downdata(url1 + i);

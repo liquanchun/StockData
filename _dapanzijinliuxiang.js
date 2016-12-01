@@ -7,7 +7,7 @@ var server = require("./curl");
 var query=require("./mysql.js");
 var moment = require("moment");
 var flow = require('nimble');
-var logger = require("./logHelper").helper;
+var logger = require('./logger');
 var szzs = {};
 
 function zhishu() {

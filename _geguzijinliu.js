@@ -4,7 +4,7 @@ var query=require("./mysql.js");
 var mathext = require('./mathext');
 var moment = require("moment");
 var cronJob = require("cron").CronJob;
-var logger = require("./logHelper").helper;
+var logger = require('./logger');
 
 function changevalue(val){
     if(val.indexOf('亿')>0){
