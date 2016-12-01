@@ -6,8 +6,9 @@ var url = "http://data.10jqka.com.cn/funds/ddzz/order/asc/page/1/ajax/1/";
 var cronJob = require("cron").CronJob;
 var logger = require('./logger');
 
-function start() {
-    new cronJob('*/3 * 9-14 * * MON-FRI', function () {
+var oldData = [];
+
+function startlaod() {
         console.log("实时大单",moment().format("YYYY-MM-DD HH:mm:ss"));
         server.download(url, function (data) {
             if (data) {
@@ -25,12 +26,19 @@ function start() {
                         var d6 = $(item).children("td").eq(6).text().trim();
                         var d7 = $(item).children("td").eq(7).text().trim().slice(0, -1);
                         var d8 = $(item).children("td").eq(8).text().trim();
-                        var sqlstring = "Insert into RT_Big_Bill(stock_code,stock_name,trade_price,trade_number,trade_amount,bill_type,price_change,change_number,recode_date,recode_time,update_time)values";
-                        sqlstring += "('" + d1 + "','" + d2 + "'," + d3 + "," + d4 + "," + d5 + ",'" + d6 + "'," + d7 + "," + d8;
-                        sqlstring += ",'" + d0.split(' ')[0] + "','" + d0.split(' ')[1] + "'," + Date.now() + ")";
-                        query(sqlstring, function (err, vals, fields) {
-                            if (err && err.code !== 'ER_DUP_ENTRY')  logger.writeSql(err,sqlstring);
-                        });
+
+                        let keystring = d0 + d1 +d3 +d4;
+                        let fd = oldData.find((n)=> n === keystring);
+                        if(fd === undefined)
+                        {
+                            var sqlstring = "Insert into RT_Big_Bill(stock_code,stock_name,trade_price,trade_number,trade_amount,bill_type,price_change,change_number,recode_date,recode_time,update_time)values";
+                            sqlstring += "('" + d1 + "','" + d2 + "'," + d3 + "," + d4 + "," + d5 + ",'" + d6 + "'," + d7 + "," + d8;
+                            sqlstring += ",'" + d0.split(' ')[0] + "','" + d0.split(' ')[1] + "'," + Date.now() + ")";
+                            query(sqlstring, function (err, vals, fields) {
+                                if (err && err.code !== 'ER_DUP_ENTRY')  logger.writeSql(err, sqlstring);
+                            });
+                            oldData.push(keystring);
+                        }
                         //console.log(sqlstring);
                         //}
                     });
@@ -42,7 +50,16 @@ function start() {
                 logger.writeErr("error",url);
             }
         });
+}
+function start() {
+    new cronJob('*/3 * 10,13,14 * * MON-FRI', function () {
+        startlaod();
+    }, null, true, 'Asia/Chongqing');
+    new cronJob('*/3 30-59 9 * * MON-FRI', function () {
+        startlaod();
+    }, null, true, 'Asia/Chongqing');
+    new cronJob('0 5 15 * * MON-FRI', function () {
+        oldData = [];
     }, null, true, 'Asia/Chongqing');
 }
-
 start();

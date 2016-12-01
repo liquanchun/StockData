@@ -5,9 +5,9 @@ var log4js = require('log4js');
 log4js.configure({
     appenders: [
         { type: 'console' },
-        { type: 'file', filename: 'logs/error.log', "maxLogSize": 20480,category: 'error', },
-        { type: 'file', filename: 'logs/info.log',"maxLogSize": 20480, category: 'info' },
-        { type: 'file', filename: 'logs/sql.log', "maxLogSize": 20480,category: 'sql' }
+        { type: 'file', filename: 'logs/error.log', "maxLogSize": 2048000,category: 'error', },
+        { type: 'file', filename: 'logs/info.log',"maxLogSize": 2048000, category: 'info' },
+        { type: 'file', filename: 'logs/sql.log', "maxLogSize": 2048000,category: 'sql' }
     ]
 });
 

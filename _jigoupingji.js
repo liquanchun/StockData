@@ -5,7 +5,7 @@ var moment = require("moment");
 var cronJob = require("cron").CronJob;
 var logger = require('./logger');
 
-function start(url,mode) {
+function newnotice(url,mode) {
     server.download(url, function (data) {
         if (data) {
             //console.log(data);
@@ -42,7 +42,7 @@ function start(url,mode) {
         }
     });
 }
-function newnotice() {
+function start() {
 
     new cronJob('0 10 16 * * MON-FRI', function(){
             console.log('机构评级',moment().format("YYYY-MM-DD HH:mm:ss"));

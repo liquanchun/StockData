@@ -16,7 +16,7 @@ function downdata(url) {
             var index1 = data.indexOf('(') + 1;
             var index2 = data.indexOf(')');
             try {
-                var d = JSON.parse(data.slice(index1, index2 + 1));
+                var d = JSON.parse(data.slice(index1, index2));
                 var list = d["list"];
                 var sqlarr = [];
                 for (var i = 0; i < list.length; i++) {

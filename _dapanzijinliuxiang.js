@@ -72,8 +72,15 @@ function zilj() {
 
 var cronJob = require("cron").CronJob;
 function start() {
-
-    new cronJob('0 */8 9-16 * * MON-FRI', function () {
+    new cronJob('0 */5 10,13,14 * * MON-FRI', function () {
+        console.log('大盘资金实时流向',moment().format("YYYY-MM-DD HH:mm:ss"));
+        zhishu();
+    }, null, true, 'Asia/Chongqing');
+    new cronJob('0 30,35,40,45,50,55 9 * * MON-FRI', function () {
+        console.log('大盘资金实时流向',moment().format("YYYY-MM-DD HH:mm:ss"));
+        zhishu();
+    }, null, true, 'Asia/Chongqing');
+    new cronJob('0 0,5,10,15,20,25,30 11 * * MON-FRI', function () {
         console.log('大盘资金实时流向',moment().format("YYYY-MM-DD HH:mm:ss"));
         zhishu();
     }, null, true, 'Asia/Chongqing');
