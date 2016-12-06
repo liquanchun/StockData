@@ -8,7 +8,7 @@ var url = "http://data.10jqka.com.cn/financial/ggjy/field/enddate/order/desc/pag
 var cronJob = require("cron").CronJob;
 
 function start() {
-    new cronJob('0 5 9,15 * * MON-FRI', function () {
+    new cronJob('0 18 9,21 * * MON-FRI', function () {
         console.log('高管持股',moment().format("YYYY-MM-DD HH:mm:ss"));
         server.download(url, function (data) {
             if (data) {
@@ -33,8 +33,10 @@ function start() {
                         data.d13 = $(item).children("td").eq(13).text().trim();
 
                         var sqlstring = "Insert into CEOShareHold(stock_code,stock_name,changer,change_date,change_count,trade_price,change_reason,change_rate,change_last_count,ceo,ceo_salary,ceo_post,ceo_relation,update_time)values";
-                        sqlstring += "('" + data.d1 + "','" + data.d2 + "','" + data.d3 + "','" + data.d4 + "'," + data.d5 + "," + data.d6 + ",'" + data.d7 + "','" + data.d8 + "','" + data.d9 + "','" + data.d10 + "','" + data.d11 + "','" + data.d12 + "','" + data.d13 + "'";
+                        sqlstring += "('" + data.d1 + "','" + data.d2 + "','" + data.d3 + "','" + data.d4 + "','" + data.d5 + "'," + data.d6 + ",'" + data.d7 + "','" + data.d8 + "','" + data.d9 + "','" + data.d10 + "','" + data.d11 + "','" + data.d12 + "','" + data.d13 + "'";
                         sqlstring += "," + Date.now() + ")";
+
+                        console.log(sqlstring);
                         query(sqlstring, function (err, vals, fields) {
                             if (err && err.code !== 'ER_DUP_ENTRY')  logger.writeSql(err, sqlstring);
                         });
