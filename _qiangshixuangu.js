@@ -164,25 +164,25 @@ var ljqs = "http://data.10jqka.com.cn/rank/ljqs/field/count/order/desc/page/";
 var endurl="/ajax/1/";
 
 function start() {
-    new cronJob('0 10 17 * * MON-FRI', function () {
+    new cronJob('0 33 21 * * MON-FRI', function () {
         console.log('强势选股,连续上涨',moment().format("YYYY-MM-DD HH:mm:ss"));
         for(var i=1;i<=25;i++){
             dowdatalxsz(lxsz + i + endurl, '连续上涨');
         }
     }, null, true, 'Asia/Chongqing');
-    new cronJob('0 20 17 * * MON-FRI', function () {
+    new cronJob('0 35 21 * * MON-FRI', function () {
         console.log('强势选股,持续放量',moment().format("YYYY-MM-DD HH:mm:ss"));
         for(var i=1;i<10;i++) {
             dowdatacxfl(cxfl + i + endurl, '持续放量');
         }
     }, null, true, 'Asia/Chongqing');
-    new cronJob('0 35 17 * * MON-FRI', function () {
+    new cronJob('0 37 21 * * MON-FRI', function () {
         console.log('强势选股,向上突破',moment().format("YYYY-MM-DD HH:mm:ss"));
         for(var i=1;i<=45;i++) {
             dowdataxstp(xstp + i + endurl, '向上突破');
         }
     }, null, true, 'Asia/Chongqing');
-    new cronJob('0 40 17 * * MON-FRI', function () {
+    new cronJob('0 38 21 * * MON-FRI', function () {
         console.log('强势选股,量价齐升',moment().format("YYYY-MM-DD HH:mm:ss"));
         for(var i=1;i<=30;i++) {
             dowdataljqs(ljqs + i + endurl, '量价齐升');

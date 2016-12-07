@@ -44,15 +44,16 @@ function newnotice(url,mode) {
 }
 function start() {
 
-    new cronJob('0 10 16 * * MON-FRI', function(){
+    new cronJob('0 53 15 * * MON-FRI', function(){
             console.log('机构评级',moment().format("YYYY-MM-DD HH:mm:ss"));
             var url1 = "http://vip.stock.finance.sina.com.cn/q/go.php/vIR_RatingUp/index.phtml?p=";
             var url2 = "http://vip.stock.finance.sina.com.cn/q/go.php/vIR_RatingDown/index.phtml?p=";
             for(var i=1;i<8;i++){
-                start(url1 + i,'上调');
-                start(url2 + i,'下调');
+                newnotice(url1 + i,'上调');
+                newnotice(url2 + i,'下调');
             }
         }
         , null, true, 'Asia/Chongqing');
 }
 start();
+
