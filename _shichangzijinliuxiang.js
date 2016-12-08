@@ -47,6 +47,9 @@ function start() {
     new cronJob('*/3 30-59 9 * * MON-FRI', function () {
         startlaod();
     }, null, true, 'Asia/Chongqing');
+    new cronJob('*/3 0-30 11 * * MON-FRI', function () {
+        startlaod();
+    }, null, true, 'Asia/Chongqing');
     new cronJob('0 5 15 * * MON-FRI', function () {
         oldData = [];
     }, null, true, 'Asia/Chongqing');
