@@ -2,7 +2,7 @@ var cheerio = require("cheerio");
 var server = require("./curl");
 var query=require("./mysql.js");
 var moment = require("moment");
-var url = "http://data.10jqka.com.cn/funds/ddzz/order/asc/page/1/ajax/1/";
+var url = "http://data.10jqka.com.cn/funds/ddzz/order/asc/page/1/ajax/";
 var cronJob = require("cron").CronJob;
 var logger = require('./logger');
 
@@ -10,6 +10,7 @@ var oldData = [];
 
 function startlaod() {
         console.log("实时大单",moment().format("YYYY-MM-DD HH:mm:ss"));
+        url = url + Date.now();
         server.download(url, function (data) {
             if (data) {
                 //console.log(data);
@@ -56,6 +57,9 @@ function start() {
         startlaod();
     }, null, true, 'Asia/Chongqing');
     new cronJob('*/3 30-59 9 * * MON-FRI', function () {
+        startlaod();
+    }, null, true, 'Asia/Chongqing');
+    new cronJob('*/3 0-30 11 * * MON-FRI', function () {
         startlaod();
     }, null, true, 'Asia/Chongqing');
     new cronJob('0 5 15 * * MON-FRI', function () {

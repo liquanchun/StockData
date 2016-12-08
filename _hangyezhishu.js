@@ -1,4 +1,4 @@
-var cheerio = require("cheerio");
+﻿var cheerio = require("cheerio");
 var server = require("./curl");
 var query=require("./mysql.js");
 var moment = require("moment");

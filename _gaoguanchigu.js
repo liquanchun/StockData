@@ -8,7 +8,7 @@ var url = "http://data.10jqka.com.cn/financial/ggjy/field/enddate/order/desc/pag
 var cronJob = require("cron").CronJob;
 
 function start() {
-    new cronJob('0 18 9,21 * * MON-FRI', function () {
+    new cronJob('0 18 9,15 * * MON-FRI', function () {
         console.log('高管持股',moment().format("YYYY-MM-DD HH:mm:ss"));
         server.download(url, function (data) {
             if (data) {
