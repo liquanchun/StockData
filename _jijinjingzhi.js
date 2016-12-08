@@ -23,13 +23,13 @@ function startlaod() {
                         var d5 = $(item).children("td").eq(5).text().trim();
                         var d7 = $(item).children("td").eq(7).text().trim();
                         var d8 = $(item).children("td").eq(8).text().trim();
-                        console.log(d3.replace('估算图基金吧档案',''));
-                        var sqlstring = "Insert into fundnetval(fundcode,fundname,gusuanrate,realrate,gusuanpc,recode_date,update_time)values";
-                        sqlstring += "('" + d2 + "','" + d3 + "','" + d5 + "','" + d7 + "','" + d8 + "'";
+                        var address = "http://fund.eastmoney.com/" + $(item).children("td").eq(3).children("a").attr('href');
+                        var sqlstring = "Insert into fundnetval(fundcode,fundname,address,gusuanrate,realrate,gusuanpc,recode_date,update_time)values";
+                        sqlstring += "('" + d2 + "','" + d3 + "','" + address + "','" + d5 + "','" + d7 + "','" + d8 + "'";
                         sqlstring += ",'" + moment().format("YYYY-MM-DD") + "'," + Date.now() + ")";
                         //console.log(sqlstring);
                         query(sqlstring, function (err, vals, fields) {
-                           if (err && err.code !== 'ER_DUP_ENTRY')  logger.writeSql(err, sqlstring);
+                          if (err && err.code !== 'ER_DUP_ENTRY')  logger.writeSql(err, sqlstring);
                         });
                     //}
                 });
