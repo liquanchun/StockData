@@ -10,25 +10,26 @@ var cronJob = require("cron").CronJob;
 var logger = require('./logger');
 
 function startlaod() {
-    console.log("����ֵ",moment().format("YYYY-MM-DD HH:mm:ss"));
+    console.log("����ֵ",moment().format("YYYY-MM-DD HH:mm:ss"));
     server.download(url, function (data) {
         if (data) {
-            //console.log(data);
+           // console.log(data);
             try {
                 var $ = cheerio.load(data);
                 $("table.dbtable tbody tr").each(function (i, item) {
                     //if (i === 0) {
                         var d2 = $(item).children("td").eq(2).text().trim();
+                        var d3 = $(item).children("td").eq(3).text().trim().replace('估算图基金吧档案','');
                         var d5 = $(item).children("td").eq(5).text().trim();
                         var d7 = $(item).children("td").eq(7).text().trim();
                         var d8 = $(item).children("td").eq(8).text().trim();
-
-                        var sqlstring = "Insert into fundnetval(fundcode,gusuanrate,realrate,gusuanpc,recode_date,update_time)values";
-                        sqlstring += "('" + d2 + "','" + d5 + "','" + d7 + "','" + d8 + "'";
+                        console.log(d3.replace('估算图基金吧档案',''));
+                        var sqlstring = "Insert into fundnetval(fundcode,fundname,gusuanrate,realrate,gusuanpc,recode_date,update_time)values";
+                        sqlstring += "('" + d2 + "','" + d3 + "','" + d5 + "','" + d7 + "','" + d8 + "'";
                         sqlstring += ",'" + moment().format("YYYY-MM-DD") + "'," + Date.now() + ")";
                         //console.log(sqlstring);
                         query(sqlstring, function (err, vals, fields) {
-                            if (err && err.code !== 'ER_DUP_ENTRY')  logger.writeSql(err, sqlstring);
+                           if (err && err.code !== 'ER_DUP_ENTRY')  logger.writeSql(err, sqlstring);
                         });
                     //}
                 });
