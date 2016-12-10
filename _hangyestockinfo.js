@@ -27,14 +27,14 @@ function downdata(url,hangye) {
                 var list = d["data"];
                 var sqlarr = [];
                 if(list == null || list == undefined) return;
-                for (var i = 0; i < list.length; i++) {
+                for (let i = 0; i < list.length; i++) {
                     var data = list[i];
                     var sqlstring = "Insert into hangyestockinfo(stock_code,hangye,update_time)";
                     sqlstring += "values('" + data['stockcode'] + "','" + hangye + "'";
                     sqlstring += "," + Date.now() + ")";
                     sqlarr.push(sqlstring);
                 }
-                for (var i = 0; i < sqlarr.length; i++) {
+                for (let i = 0; i < sqlarr.length; i++) {
                     //console.log(sqlarr[i]);
                     query(sqlarr[i], function (err, vals, fields) {
                        if (err && err.code !== 'ER_DUP_ENTRY')  logger.writeSql(err,sqlarr[i]);
@@ -62,7 +62,6 @@ start();
 
 function SetArr() {
     urlArr.push('cjfw');
-    /*
     urlArr.push('gt');
     urlArr.push('qczc');
     urlArr.push('ls');
@@ -128,7 +127,6 @@ function SetArr() {
     urlArr.push('hbgc');
     urlArr.push('yqyb');
     urlArr.push('zzyyly');
-    */
 }
 
 

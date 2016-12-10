@@ -9,23 +9,72 @@ var cronJob = require("cron").CronJob;
 var logger = require('./logger');
 
 function startlaod(url) {
-    server.download(url, function (data) {
+    server.download2(url, function (data) {
         if (data) {
             try {
-                let dataArr =data.split('\n');
-                let len = dataArr.length;
-                for(let i=1;i<len -1;i++){
-                    let valArr =dataArr[i].split(',');
-                    var sqlstring = "Insert into stock_trade values";
-                    sqlstring += "('"+ valArr[0]  +"','"+ valArr[1].substr(1) +"','"+ valArr[2] +"',";
-                    sqlstring += valArr[3] + "," + valArr[4] + ","+ valArr[5] + ","+ valArr[6] + ","+ valArr[7] + ",";
-                    sqlstring += valArr[8] + "," + valArr[9] + ","+ valArr[10] + ","+ valArr[11] + ","+ valArr[12] + ",";
-                    sqlstring += valArr[13];
-                    sqlstring += ")";
-                    //console.log(sqlstring);
-                    query(sqlstring, function (err, vals, fields) {
-                       if (err && err.code !== 'ER_DUP_ENTRY')  logger.writeSql(err, sqlstring);
-                   });
+                var d = JSON.parse(data);
+                var list = d["list"];
+                for(let i=0;i<list.length;i++) {
+                    var item = list[i];
+                    var fields = [];
+                    fields.push("CODE");
+                    fields.push("FIVE_MINUTE");
+                    fields.push("HIGH");
+                    fields.push("HS");
+                    fields.push("LB");
+                    fields.push("LOW");
+                    fields.push("MCAP");
+                    fields.push("MFRATIO2");
+                    fields.push("MFRATIO10");
+                    fields.push("MFSUM");
+                    fields.push("NAME");
+                    fields.push("OPEN");
+                    fields.push("PE");
+                    fields.push("PERCENT");
+                    fields.push("PRICE");
+                    fields.push("SNAME");
+                    fields.push("SYMBOL");
+                    fields.push("TCAP");
+                    fields.push("TURNOVER");
+                    fields.push("UPDOWN");
+                    fields.push("VOLUME");
+                    fields.push("WB");
+                    fields.push("YESTCLOSE");
+                    fields.push("ZF");
+                    fields.push("NO");
+                    fields.push("record_date");
+                    fields.push("record_time");
+                    var sqlpre = "Insert into stocktradelist(" + fields.join(',') + ") values (";
+                    sqlpre += "'" + item.CODE + "',";
+                    sqlpre += "'" + item.FIVE_MINUTE + "',";
+                    sqlpre += "'" + item.HIGH + "',";
+                    sqlpre += "'" + item.HS + "',";
+                    sqlpre += "'" + item.LB + "',";
+                    sqlpre += "'" + item.LOW + "',";
+                    sqlpre += "'" + item.MCAP + "',";
+                    sqlpre += "'" + item.MFRATIO.MFRATIO2 + "',";
+                    sqlpre += "'" + item.MFRATIO.MFRATIO10 + "',";
+                    sqlpre += "'" + item.MFSUM + "',";
+                    sqlpre += "'" + item.NAME + "',";
+                    sqlpre += "'" + item.OPEN + "',";
+                    sqlpre += "'" + item.PE + "',";
+                    sqlpre += "'" + item.PERCENT + "',";
+                    sqlpre += "'" + item.PRICE + "',";
+                    sqlpre += "'" + item.SNAME + "',";
+                    sqlpre += "'" + item.SYMBOL + "',";
+                    sqlpre += "'" + item.TCAP + "',";
+                    sqlpre += "'" + item.TURNOVER + "',";
+                    sqlpre += "'" + item.UPDOWN + "',";
+                    sqlpre += "'" + item.VOLUME + "',";
+                    sqlpre += "'" + item.WB + "',";
+                    sqlpre += "'" + item.YESTCLOSE + "',";
+                    sqlpre += "'" + item.ZF + "',";
+                    sqlpre += "'" + item.NO + "',";
+                    sqlpre += "'" + moment().format("YYYY-MM-DD") + "','" + moment().format("HH:mm:ss") + "')";
+
+                    query(sqlpre, function (err, vals, fields) {
+                        if (err && err.code !== 'ER_DUP_ENTRY')  logger.writeSql(err, sqlpre);
+                    });
                 }
             }
             catch(err){
@@ -37,15 +86,13 @@ function startlaod(url) {
     });
 }
 function start() {
-    var sqlstring = "select distinct stock_code from hangyestockinfo where stock_code like '6%'";
-    query(sqlstring, function (err, vals, fields) {
-        if(vals != undefined) {
-            for (let i = 0; i < vals.length; i++) {
-                var url = "http://quotes.money.163.com/service/chddata.html?code=0" + vals[i].stock_code + "&start=20100101&end=20161205&fields=TCLOSE;HIGH;LOW;TOPEN;LCLOSE;CHG;PCHG;TURNOVER;VOTURNOVER;VATURNOVER;TCAP;MCAP";
+    new cronJob('0 38 16 * * MON-SAT', function () {
+            console.log('个股交易', moment().format("YYYY-MM-DD HH:mm:ss"));
+            for (let i = 0; i < 130; i++) {
+                var url = "http://quotes.money.163.com/hs/service/diyrank.php?host=http%3A%2F%2Fquotes.money.163.com%2Fhs%2Fservice%2Fdiyrank.php&page=" + i.toString() + "&query=STYPE%3AEQA&fields=NO%2CSYMBOL%2CNAME%2CPRICE%2CPERCENT%2CUPDOWN%2CFIVE_MINUTE%2COPEN%2CYESTCLOSE%2CHIGH%2CLOW%2CVOLUME%2CTURNOVER%2CHS%2CLB%2CWB%2CZF%2CPE%2CMCAP%2CTCAP%2CMFSUM%2CMFRATIO.MFRATIO2%2CMFRATIO.MFRATIO10%2CSNAME%2CCODE%2CANNOUNMT%2CUVSNEWS&sort=PERCENT&order=desc&count=24&type=query";
                 startlaod(url);
             }
         }
-        if (err && err.code !== 'ER_DUP_ENTRY')  logger.writeSql(err, sqlstring);
-    });
+        , null, true, 'Asia/Chongqing');
 }
 start();

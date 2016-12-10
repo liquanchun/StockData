@@ -11,14 +11,16 @@ log4js.configure({
     ]
 });
 
-var writeErr = function(msg) {
+var writeErr = function(msg,url) {
     var loggererror = log4js.getLogger('error');
     loggererror.error(msg);
+    loggererror.error(url);
 }
 
-var writeSql = function(msg) {
+var writeSql = function(msg,sql) {
     var loggersql = log4js.getLogger('sql');
     loggersql.debug(msg);
+    loggersql.debug(sql);
 }
 
 var writeInfo = function(msg) {
