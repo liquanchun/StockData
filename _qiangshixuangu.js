@@ -97,7 +97,7 @@ function dowdataxstp(url,lx) {
                     data.d7 = $(item).children("td").eq(7).text().trim().slice(0, -1);
 
                     var sqlstring = "Insert into SelectStock(stock_code,stock_name,close_price,trade_amount,trade_number,section_change,handover_rate,record_date,update_time,select_mode)values";
-                    sqlstring += "('" + data.d1 + "','" + data.d2 + "'," + data.d3 + ",'" + data.d4 + "','" + data.d5 + "'," + data.d6 + "," + data.d7;
+                    sqlstring += "('" + data.d1 + "','" + data.d2 + "','" + data.d3 + "','" + data.d4 + "','" + data.d5 + "','" + data.d6 + "','" + data.d7 + "'";
                     sqlstring += ",'" + moment().format("YYYY-MM-DD") + "'," + Date.now() + ",'" + lx + "')";
                     query(sqlstring, function (err, vals, fields) {
                         if (err && err.code !== 'ER_DUP_ENTRY')  logger.writeSql(err, sqlstring);
@@ -133,9 +133,8 @@ function dowdataljqs(url,lx) {
                     data.d7 = $(item).children("td").eq(7).text().trim();
 
                     var sqlstring = "Insert into SelectStock(stock_code,stock_name,close_price,rise_days,section_change,handover_rate,business,record_date,update_time,select_mode)values";
-                    sqlstring += "('" + data.d1 + "','" + data.d2 + "'," + data.d3 + ",'" + data.d4 + "','" + data.d5 + "'," + data.d6 + ",'" + data.d7 + "'";
+                    sqlstring += "('" + data.d1 + "','" + data.d2 + "'," + data.d3 + ",'" + data.d4 + "','" + data.d5 + "'," + data.d6 + "," + data.d7;
                     sqlstring += ",'" + moment().format("YYYY-MM-DD") + "'," + Date.now() + ",'" + lx + "')";
-
                     query(sqlstring, function (err, vals, fields) {
                         if (err && err.code !== 'ER_DUP_ENTRY')  logger.writeSql(err, sqlstring);
                     });
@@ -165,28 +164,27 @@ var ljqs = "http://data.10jqka.com.cn/rank/ljqs/field/count/order/desc/page/";
 var endurl="/ajax/1/";
 
 function start() {
-    new cronJob('0 33 16 * * MON-FRI', function () {
+    new cronJob('0 10 17 * * MON-FRI', function () {
         console.log('强势选股,连续上涨',moment().format("YYYY-MM-DD HH:mm:ss"));
         for(var i=1;i<=25;i++){
             dowdatalxsz(lxsz + i + endurl, '连续上涨');
         }
     }, null, true, 'Asia/Chongqing');
-    new cronJob('0 35 16 * * MON-FRI', function () {
+    new cronJob('0 20 17 * * MON-FRI', function () {
         console.log('强势选股,持续放量',moment().format("YYYY-MM-DD HH:mm:ss"));
         for(var i=1;i<10;i++) {
             dowdatacxfl(cxfl + i + endurl, '持续放量');
         }
     }, null, true, 'Asia/Chongqing');
-    new cronJob('0 37 16 * * MON-FRI', function () {
+    new cronJob('0 35 17 * * MON-FRI', function () {
         console.log('强势选股,向上突破',moment().format("YYYY-MM-DD HH:mm:ss"));
         for(var i=1;i<=45;i++) {
             dowdataxstp(xstp + i + endurl, '向上突破');
         }
     }, null, true, 'Asia/Chongqing');
-
-    new cronJob('0 14 16 * * MON-FRI', function () {
+    new cronJob('0 40 17 * * MON-FRI', function () {
         console.log('强势选股,量价齐升',moment().format("YYYY-MM-DD HH:mm:ss"));
-        for(var i=1;i<=1;i++) {
+        for(var i=1;i<=30;i++) {
             dowdataljqs(ljqs + i + endurl, '量价齐升');
         }
     }, null, true, 'Asia/Chongqing');

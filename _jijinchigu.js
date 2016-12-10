@@ -8,7 +8,7 @@ var server = require("./curl");
 var query=require("./mysql.js");
 var mathext = require('./mathext');
 var moment = require("moment");
-var logger = require('./logger');
+var logger = require("./logHelper").helper;
 
 function downdata(url) {
     server.download2(url, function (data) {
@@ -16,7 +16,7 @@ function downdata(url) {
             var index1 = data.indexOf('(') + 1;
             var index2 = data.indexOf(')');
             try {
-                var d = JSON.parse(data.slice(index1, index2));
+                var d = JSON.parse(data.slice(index1, index2 + 1));
                 var list = d["list"];
                 var sqlarr = [];
                 for (var i = 0; i < list.length; i++) {
@@ -43,6 +43,7 @@ function downdata(url) {
 }
 
 var url1 = "http://quotes.money.163.com/hs/marketdata/service/jjcgph.php?host=/hs/marketdata/service/jjcgph.php&query=start:2015-06-30;end:2015-09-30&fields=RN,SYMBOL,SNAME,REPORTDATE,SHULIANG,SHULIANGBIJIAO,GUSHU,GUSHUBIJIAO,SHIZHI,SCSTC27&sort=SHULIANG&order=desc&count=25&type=query&callback=callback_180491765&req=31529&page=";
+
 function start(){
     for(var i = 0;i<70;i++){
         downdata(url1 + i);

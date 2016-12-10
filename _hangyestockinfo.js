@@ -4,7 +4,7 @@
 /**
  * Created by Administrator on 2015-11-04.
  */
-//沪股通资金实时流向
+//锟斤拷锟斤拷通锟绞斤拷实时锟斤拷锟斤拷
 var cheerio = require("cheerio");
 var server = require("./curl");
 
@@ -17,6 +17,7 @@ var urlArr = [];
 function downdata(url,hangye) {
     server.download2(url, function (data) {
         if (data) {
+            console.log(data);
             var index1 = data.indexOf('"data"');
             var index2 = data.indexOf('}]') + 2;
             try {
@@ -61,6 +62,7 @@ start();
 
 function SetArr() {
     urlArr.push('cjfw');
+    /*
     urlArr.push('gt');
     urlArr.push('qczc');
     urlArr.push('ls');
@@ -126,6 +128,7 @@ function SetArr() {
     urlArr.push('hbgc');
     urlArr.push('yqyb');
     urlArr.push('zzyyly');
+    */
 }
 
 
