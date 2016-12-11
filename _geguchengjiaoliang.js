@@ -64,7 +64,7 @@ function startlaod(url,pagecount,leixin) {
     });
 }
 function start() {
-    new cronJob('0 42 16 * * MON-SAT', function () {
+    new cronJob('0 42 16 * * MON-FRI', function () {
             console.log('成交量骤增', moment().format("YYYY-MM-DD HH:mm:ss"));
             var ym = moment().format("MMDD");
             for(let i=0;i<10;i++) {
